@@ -1,24 +1,84 @@
-# Compiled class file
+# =========================
+# Java / Maven build output
+# =========================
+target/
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
+*.nar
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+*.log.*
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+**/.DS_Store
+Thumbs.db
+Desktop.ini
+hs_err_pid*
+replay_pid*
+
+# =========================
+# IDE / Editor files
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-dev-local.yml
+application-dev-local.yaml
+application-prod.yml
+application-prod.yaml
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+# =========================
+# Test / coverage reports
+# =========================
+coverage/
+jacoco.exec
+**/jacoco.exec
+**/site/jacoco/
+surefire-reports/
+failsafe-reports/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# =========================
+# Archives / packages
+# =========================
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+*.7z
